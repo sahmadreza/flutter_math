@@ -104,6 +104,9 @@ String sqrtPath(String size, double extraViniculum, double viewBoxHeight) {
 
   switch (size) {
     case 'sqrtMain':
+    case 'sqrtMainFaNum':
+    case 'sqrtMainFa':
+    case 'sqrtMainFaN':
       path = sqrtMain(extraViniculum, hLinePad);
       break;
     case 'sqrtSize1':
