@@ -64,6 +64,10 @@ Future<void> loadKaTeXFonts() async {
       'packages/flutter_math_fork/KaTeX_MainFaNum')
     ..addFont(getFontData('lib/katex_fonts/fonts/KaTeX_MainFaNum-Regular.ttf'));
 
+  final katexFontMixLoader = FontLoader(
+      'packages/flutter_math_fork/KaTeX_FontMix')
+    ..addFont(getFontData('lib/katex_fonts/fonts/KaTeX_FontMix-Regular.ttf'));
+
   await Future.wait([
     katexMainLoader.load(),
     katexMathLoader.load(),
@@ -78,6 +82,7 @@ Future<void> loadKaTeXFonts() async {
     katexSize3Loader.load(),
     katexSize4Loader.load(),
     katexMainFaNumLoader.load(),
+    katexFontMixLoader.load(),
   ]);
 }
 

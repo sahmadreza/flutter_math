@@ -81,3 +81,6 @@ flutter:
     - family: KaTeX_MainFaNum
       fonts:
         - asset: lib/katex_fonts/fonts/KaTeX_MainFaNum-Regular.ttf
+    - family: KaTeX_FontMix
+      fonts:
+        - asset: lib/katex_fonts/fonts/KaTeX_FontMix-Regular.ttf
